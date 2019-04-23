@@ -1,0 +1,40 @@
+<header class="mxc-home__header">
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand mx-auto" href="#">Money Xchange</a>
+  </nav>
+</header>
+
+<main class="mxc-home__main container mt-5">
+  <mxc-price class="mb-3"></mxc-price>
+
+  <form [formGroup]="formExchange" class="row" (submit)="submit()">
+    <div class="col-12 bg-white shadow-sm rounded p-4">
+      <div class="d-flex justify-content-center align-items-center">
+        <mxc-rate
+          [symbol]="exchange.baseSymbol"
+          [control]="formExchange.get('baseAmount')"
+        ></mxc-rate>
+
+        <div class="mr-2 ml-2 text-dark">
+          <i class="fas fa-exchange-alt mt-4"></i>
+        </div>
+
+        <mxc-rate
+          [symbol]="exchange.rateSymbol"
+          [control]="formExchange.get('rateAmount')"
+          disabled="true"
+        ></mxc-rate>
+      </div>
+    </div>
+
+    <div class="col-12 text-center mt-5">
+      <mxc-button type="submit" color="dark">
+        Calcular
+      </mxc-button>
+    </div>
+  </form>
+</main>
+
+<footer class="mxc-home__footer bg-dark text-white text-center mt-5">
+  © 2019 Money Xchange
+</footer>

@@ -1,0 +1,19 @@
+.mxc-home {
+  display: block;
+
+  &__header {
+    width: 100%;
+  }
+
+  &__main {
+    width: 100%;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    font-size: 12px;
+  }
+}

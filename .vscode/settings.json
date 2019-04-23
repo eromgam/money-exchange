@@ -1,0 +1,8 @@
+{
+    "editor.tabSize": 2,
+    "files.trimTrailingWhitespace": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "tslint.configFile": "./tslint.json",
+    "prettier.tslintIntegration": true
+}

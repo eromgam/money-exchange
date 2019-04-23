@@ -1,0 +1,8 @@
+<input
+  class="form-control"
+  [type]="type"
+  [value]="value || ''"
+  [disabled]="disabled"
+  (input)="mxcChange.emit($event.target)"
+  (change)="mxcChange.emit($event.target)"
+/>
